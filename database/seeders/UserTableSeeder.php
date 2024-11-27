@@ -28,16 +28,6 @@ class UserTableSeeder extends Seeder
                 'status' => 'active',
             ],
             [
-                'first_name' => 'Demo',
-                'last_name' => 'Admin',
-                'username' => 'demoadmin',
-                'email' => 'demo@example.com',
-                'password' => bcrypt('password'),
-                'phone_number' => '+12398190255',
-                'email_verified_at' => now(),
-                'user_type' => 'demo_admin',
-            ],
-            [
                 'first_name' => 'John',
                 'last_name' => 'User',
                 'username' => 'user',
@@ -46,6 +36,17 @@ class UserTableSeeder extends Seeder
                 'phone_number' => '+12398190255',
                 'email_verified_at' => now(),
                 'user_type' => 'user',
+                'status' => 'inactive'
+            ],
+            [
+                'first_name' => 'Rayy',
+                'last_name' => 'Manager',
+                'username' => 'Manager',
+                'email' => 'manager@example.com',
+                'password' => bcrypt('password'),
+                'phone_number' => '+12398190255',
+                'email_verified_at' => now(),
+                'user_type' => 'manager',
                 'status' => 'inactive'
             ]
         ];
